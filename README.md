@@ -10,7 +10,6 @@ The API exposes a single endpoint:
 ## Features
 
 - Upload PDF files and extract structured JSON using Gemini (`gemini-2.5-flash`).
-- CORS support for integration with frontends configured for frontend (`https://plsi-tms-monitoring.vercel.app`).
 - Returns clean, parseable JSON for easy frontend mapping.
 
 ---
@@ -37,9 +36,9 @@ The API exposes a single endpoint:
 2. Create and activate a virtual environment:
 
    ```bash
-   python -m venv venv
-   source venv/bin/activate   # Linux/Mac
-   venv\Scripts\activate      # Windows
+   python -m venv .venv
+   source .venv/bin/activate   # Linux/Mac
+   .venv\Scripts\activate      # Windows
    ```
 
 3. Install dependencies:
