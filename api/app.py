@@ -10,14 +10,16 @@ app = Flask(__name__)
 load_dotenv()
 
 CORS(app, resources={r"/api/*": {
-    "origins": allowed_origins, 
+    "origins": allowed_origins,
     "methods": ["POST"]
 }})
 
 api = Api(app)
 
+
 @app.route("/")
 def index():
     return render_template_string(html_template)
+
 
 api.add_resource(Extract, "/api/extract")
