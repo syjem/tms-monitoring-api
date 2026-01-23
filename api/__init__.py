@@ -1,4 +1,4 @@
-allowed_origins = ["https://plsi-tms-monitoring.vercel.app"]
+allowed_origins = ["https://tms-monitoring.vercel.app"]
 
 html_template = """
 <!DOCTYPE html>
